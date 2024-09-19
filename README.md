@@ -1,43 +1,42 @@
-# Excellia--Academic-Record-and-Ranking-System
+# **Excellia - Academic Record and Ranking System**
 
-### Excellia - Academic Record and Ranking System is a Spring Boot-based web application designed to manage academic records and rank students based on their performance. The system provides RESTful APIs for performing CRUD operations on student data and calculating rankings based on their marks. The application uses PostgreSQL as the database and is Docker-enabled for easy deployment and scalability.
+**Excellia** is a Spring Boot-based web application designed to efficiently manage academic records and rank students based on their performance. The system offers robust RESTful APIs for performing CRUD operations on student data, calculating rankings based on marks, and is fully integrated with PostgreSQL. It leverages Docker for seamless deployment and scalability.
 
-### Key Features:
-Student Management: Add, update, and delete student profiles.
-Marks Management: Track student marks for different subjects and update them as needed.
-Ranking System: Automatically rank students based on performance.
-RESTful API: Exposes endpoints for student and marks management and provides ranked student lists.
-PostgreSQL Integration: Uses PostgreSQL as the relational database to store and retrieve student and marks data.
-Docker Support: The PostgreSQL database is containerized using Docker for seamless setup and portability.
+## **Key Features**:
+- **Student Management**: Add, update, and delete student profiles.
+- **Marks Management**: Track and update student marks for various subjects.
+- **Ranking System**: Automatically rank students based on total marks or subject-specific performance.
+- **RESTful API**: Exposes endpoints for student and marks management, including fetching ranked student lists.
+- **PostgreSQL Integration**: Utilizes PostgreSQL as the relational database for reliable data storage and retrieval.
+- **Docker Support**: The PostgreSQL database is containerized for easy setup and environment portability.
 
-### Architecture:
-Spring Boot Backend:
+## **Architecture**:
+### **Spring Boot Backend**:
+- Provides RESTful APIs for managing student records and calculating rankings.
+- Communicates with a PostgreSQL database running in a Docker container.
 
-Provides RESTful APIs for managing student records and calculating rankings.
-Interacts with the PostgreSQL database running in a Docker container.
-PostgreSQL Database:
+### **PostgreSQL Database**:
+- Containerized with Docker.
+- Stores student data, subject information, and marks.
 
-Containerized using Docker.
-Stores data related to students, subjects, and marks.
-Spring Data JPA:
+### **Spring Data JPA**:
+- Manages data persistence and retrieval using JPA.
+- Interacts with the PostgreSQL database for smooth and efficient data management.
 
-Handles data persistence and retrieval using JPA and communicates with the PostgreSQL database.
+## **API Endpoints**:
 
-### Endpoints:
-
-- `GET /api/students`: Get all students.
+- `GET /api/students`: Retrieve all students.
 - `POST /api/students`: Create a new student.
-- `GET /api/students/{id}`: Get a specific student.
-- `DELETE /api/students/{id}`: Delete a student.
+- `GET /api/students/{id}`: Retrieve a specific student by ID.
+- `DELETE /api/students/{id}`: Delete a student by ID.
 - `POST /api/marks`: Add marks for a student.
-- `GET /api/marks/student/{studentId}`: Get marks for a specific student.
-- `GET /api/marks/rank`: Get student rankings based on total marks.
+- `GET /api/marks/student/{studentId}`: Retrieve marks for a specific student.
+- `GET /api/marks/rank`: Retrieve student rankings based on total marks.
 
-
-### Benefits:
-Separation of Concerns: The Spring Boot application and PostgreSQL are decoupled. PostgreSQL runs in Docker while the application runs locally.
-Portability: PostgreSQL can be deployed and run anywhere using Docker, ensuring consistency across development, testing, and production environments.
-Scalability: The database setup is easily scalable, and you can switch database environments without affecting the application code.
+## **Benefits**:
+- **Separation of Concerns**: The Spring Boot application and PostgreSQL database are decoupled. PostgreSQL runs in Docker while the Spring Boot application can run locally.
+- **Portability**: PostgreSQL can be deployed anywhere via Docker, ensuring consistency across development, testing, and production environments.
+- **Scalability**: The database is easily scalable, and switching database environments doesn't require changes to the application code.
 
 
 ## depensencies ::
