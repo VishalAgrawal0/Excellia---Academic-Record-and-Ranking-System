@@ -39,7 +39,7 @@
 - **Scalability**: The database is easily scalable, and switching database environments doesn't require changes to the application code.
 
 
-## depensencies ::
+## dependencies ::
 
 ![depensencies](https://github.com/user-attachments/assets/f0e98362-8cc4-46f0-99e5-a81715ac3c0b)
 
